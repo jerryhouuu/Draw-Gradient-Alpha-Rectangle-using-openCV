@@ -22,9 +22,9 @@ def draw_gradient_alpha_rectangle(frame, BGR_Channel, rectangle_position, rotate
 ## Image
 ![GITHUB]( https://github.com/jerryhouuu/Draw-Gradient-Alpha-Rectangle-using-openCV/blob/master/imgs/example1.jpg "rotate: 0")
 **rotate: 0** 
-![GITHUB]( https://github.com/jerryhouuu/Draw-Gradient-Alpha-Rectangle-using-openCV/blob/master/imgs/example1.jpg "rotate: 1")
+![GITHUB]( https://github.com/jerryhouuu/Draw-Gradient-Alpha-Rectangle-using-openCV/blob/master/imgs/example2.jpg "rotate: 1")
 **rotate: 1** 
-![GITHUB]( https://github.com/jerryhouuu/Draw-Gradient-Alpha-Rectangle-using-openCV/blob/master/imgs/example1.jpg "rotate: 2")
-**rotate:20** 
-![GITHUB]( https://github.com/jerryhouuu/Draw-Gradient-Alpha-Rectangle-using-openCV/blob/master/imgs/example1.jpg "rotate: 3")
+![GITHUB]( https://github.com/jerryhouuu/Draw-Gradient-Alpha-Rectangle-using-openCV/blob/master/imgs/example3.jpg "rotate: 2")
+**rotate: 2** 
+![GITHUB]( https://github.com/jerryhouuu/Draw-Gradient-Alpha-Rectangle-using-openCV/blob/master/imgs/example4.jpg "rotate: 3")
 **rotate: 3** 
