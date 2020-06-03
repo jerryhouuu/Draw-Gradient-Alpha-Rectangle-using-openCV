@@ -1,4 +1,4 @@
-# Draw a rectangle with Gradient Color using PpenCV
+# Draw a rectangle with Gradient Color using OpenCV
 ### Example
 ```python
 import cv2
