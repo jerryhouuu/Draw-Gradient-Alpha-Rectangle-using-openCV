@@ -3,8 +3,15 @@ import numpy as np
 
 def draw_gradient_alpha_rectangle(frame, BGR_Channel, rectangle_position, rotate):
     (xMin, yMin), (xMax, yMax) = rectangle_position
+    height = yMax - yMin
+    width = xMax - xMin
     color = np.array(BGR_Channel, np.uint8)[np.newaxis, :]
-    mask1 = np.rot90(np.repeat(np.tile(np.linspace(1, 0, (rectangle_position[1][1]-rectangle_position[0][1])), ((rectangle_position[1][0]-rectangle_position[0][0]), 1))[:, :, np.newaxis], 3, axis=2), rotate) 
+    if rotate == 1 or rotate == 3:
+        mask1 = np.rot90(np.repeat(np.tile(np.linspace(1, 0, height), (width, 1))[:, :, np.newaxis], 3, axis=2), rotate)
+    elif rotate == 0 or rotate == 2:
+        mask1 = np.rot90(np.repeat(np.tile(np.linspace(1, 0, width), (height, 1))[:, :, np.newaxis], 3, axis=2), rotate)
+    else:
+        raise Exception(f"invalid rotation value (expected int 0-3): {rotate}")
     frame[yMin:yMax, xMin:xMax, :] = mask1 * frame[yMin:yMax, xMin:xMax, :] + (1-mask1) * color
 
     return frame
